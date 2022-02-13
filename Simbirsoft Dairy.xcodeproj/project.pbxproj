@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E527B92DC3007B3028 /* AppDelegate.swift */; };
+		9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E727B92DC3007B3028 /* SceneDelegate.swift */; };
+		9164E0EA27B92DC3007B3028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* ViewController.swift */; };
+		9164E0ED27B92DC3007B3028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9164E0EB27B92DC3007B3028 /* Main.storyboard */; };
+		9164E0EF27B92DC7007B3028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9164E0EE27B92DC7007B3028 /* Assets.xcassets */; };
+		9164E0F227B92DC7007B3028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */; };
+		9164E0FD27B92DC8007B3028 /* Simbirsoft_DairyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0FC27B92DC8007B3028 /* Simbirsoft_DairyTests.swift */; };
+		9164E10727B92DC8007B3028 /* Simbirsoft_DairyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E10627B92DC8007B3028 /* Simbirsoft_DairyUITests.swift */; };
+		9164E10927B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9164E0F927B92DC8007B3028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9164E0DA27B92DC3007B3028 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9164E0E127B92DC3007B3028;
+			remoteInfo = "Simbirsoft Dairy";
+		};
+		9164E10327B92DC8007B3028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9164E0DA27B92DC3007B3028 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9164E0E127B92DC3007B3028;
+			remoteInfo = "Simbirsoft Dairy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simbirsoft Dairy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9164E0E527B92DC3007B3028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9164E0E727B92DC3007B3028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9164E0E927B92DC3007B3028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9164E0EC27B92DC3007B3028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9164E0EE27B92DC7007B3028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9164E0F127B92DC7007B3028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9164E0F327B92DC7007B3028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9164E0F827B92DC8007B3028 /* Simbirsoft DairyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simbirsoft DairyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9164E0FC27B92DC8007B3028 /* Simbirsoft_DairyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simbirsoft_DairyTests.swift; sourceTree = "<group>"; };
+		9164E10227B92DC8007B3028 /* Simbirsoft DairyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simbirsoft DairyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9164E10627B92DC8007B3028 /* Simbirsoft_DairyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simbirsoft_DairyUITests.swift; sourceTree = "<group>"; };
+		9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simbirsoft_DairyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9164E0DF27B92DC3007B3028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164E0F527B92DC8007B3028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164E0FF27B92DC8007B3028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9164E0D927B92DC3007B3028 = {
+			isa = PBXGroup;
+			children = (
+				9164E0E427B92DC3007B3028 /* Simbirsoft Dairy */,
+				9164E0FB27B92DC8007B3028 /* Simbirsoft DairyTests */,
+				9164E10527B92DC8007B3028 /* Simbirsoft DairyUITests */,
+				9164E0E327B92DC3007B3028 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9164E0E327B92DC3007B3028 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */,
+				9164E0F827B92DC8007B3028 /* Simbirsoft DairyTests.xctest */,
+				9164E10227B92DC8007B3028 /* Simbirsoft DairyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9164E0E427B92DC3007B3028 /* Simbirsoft Dairy */ = {
+			isa = PBXGroup;
+			children = (
+				9164E0E527B92DC3007B3028 /* AppDelegate.swift */,
+				9164E0E727B92DC3007B3028 /* SceneDelegate.swift */,
+				9164E0E927B92DC3007B3028 /* ViewController.swift */,
+				9164E0EB27B92DC3007B3028 /* Main.storyboard */,
+				9164E0EE27B92DC7007B3028 /* Assets.xcassets */,
+				9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */,
+				9164E0F327B92DC7007B3028 /* Info.plist */,
+			);
+			path = "Simbirsoft Dairy";
+			sourceTree = "<group>";
+		};
+		9164E0FB27B92DC8007B3028 /* Simbirsoft DairyTests */ = {
+			isa = PBXGroup;
+			children = (
+				9164E0FC27B92DC8007B3028 /* Simbirsoft_DairyTests.swift */,
+			);
+			path = "Simbirsoft DairyTests";
+			sourceTree = "<group>";
+		};
+		9164E10527B92DC8007B3028 /* Simbirsoft DairyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9164E10627B92DC8007B3028 /* Simbirsoft_DairyUITests.swift */,
+				9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */,
+			);
+			path = "Simbirsoft DairyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9164E0E127B92DC3007B3028 /* Simbirsoft Dairy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9164E10C27B92DC8007B3028 /* Build configuration list for PBXNativeTarget "Simbirsoft Dairy" */;
+			buildPhases = (
+				9164E0DE27B92DC3007B3028 /* Sources */,
+				9164E0DF27B92DC3007B3028 /* Frameworks */,
+				9164E0E027B92DC3007B3028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simbirsoft Dairy";
+			productName = "Simbirsoft Dairy";
+			productReference = 9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9164E0F727B92DC8007B3028 /* Simbirsoft DairyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9164E10F27B92DC8007B3028 /* Build configuration list for PBXNativeTarget "Simbirsoft DairyTests" */;
+			buildPhases = (
+				9164E0F427B92DC8007B3028 /* Sources */,
+				9164E0F527B92DC8007B3028 /* Frameworks */,
+				9164E0F627B92DC8007B3028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9164E0FA27B92DC8007B3028 /* PBXTargetDependency */,
+			);
+			name = "Simbirsoft DairyTests";
+			productName = "Simbirsoft DairyTests";
+			productReference = 9164E0F827B92DC8007B3028 /* Simbirsoft DairyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9164E10127B92DC8007B3028 /* Simbirsoft DairyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9164E11227B92DC8007B3028 /* Build configuration list for PBXNativeTarget "Simbirsoft DairyUITests" */;
+			buildPhases = (
+				9164E0FE27B92DC8007B3028 /* Sources */,
+				9164E0FF27B92DC8007B3028 /* Frameworks */,
+				9164E10027B92DC8007B3028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9164E10427B92DC8007B3028 /* PBXTargetDependency */,
+			);
+			name = "Simbirsoft DairyUITests";
+			productName = "Simbirsoft DairyUITests";
+			productReference = 9164E10227B92DC8007B3028 /* Simbirsoft DairyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9164E0DA27B92DC3007B3028 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					9164E0E127B92DC3007B3028 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					9164E0F727B92DC8007B3028 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 9164E0E127B92DC3007B3028;
+					};
+					9164E10127B92DC8007B3028 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 9164E0E127B92DC3007B3028;
+					};
+				};
+			};
+			buildConfigurationList = 9164E0DD27B92DC3007B3028 /* Build configuration list for PBXProject "Simbirsoft Dairy" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9164E0D927B92DC3007B3028;
+			productRefGroup = 9164E0E327B92DC3007B3028 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9164E0E127B92DC3007B3028 /* Simbirsoft Dairy */,
+				9164E0F727B92DC8007B3028 /* Simbirsoft DairyTests */,
+				9164E10127B92DC8007B3028 /* Simbirsoft DairyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9164E0E027B92DC3007B3028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164E0F227B92DC7007B3028 /* LaunchScreen.storyboard in Resources */,
+				9164E0EF27B92DC7007B3028 /* Assets.xcassets in Resources */,
+				9164E0ED27B92DC3007B3028 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164E0F627B92DC8007B3028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164E10027B92DC8007B3028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9164E0DE27B92DC3007B3028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164E0EA27B92DC3007B3028 /* ViewController.swift in Sources */,
+				9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */,
+				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164E0F427B92DC8007B3028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164E0FD27B92DC8007B3028 /* Simbirsoft_DairyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164E0FE27B92DC8007B3028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164E10927B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift in Sources */,
+				9164E10727B92DC8007B3028 /* Simbirsoft_DairyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9164E0FA27B92DC8007B3028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9164E0E127B92DC3007B3028 /* Simbirsoft Dairy */;
+			targetProxy = 9164E0F927B92DC8007B3028 /* PBXContainerItemProxy */;
+		};
+		9164E10427B92DC8007B3028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9164E0E127B92DC3007B3028 /* Simbirsoft Dairy */;
+			targetProxy = 9164E10327B92DC8007B3028 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9164E0EB27B92DC3007B3028 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9164E0EC27B92DC3007B3028 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9164E0F127B92DC7007B3028 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9164E10A27B92DC8007B3028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9164E10B27B92DC8007B3028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9164E10D27B92DC8007B3028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8KC244ECU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Simbirsoft Dairy/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NickSagan.Simbirsoft-Dairy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9164E10E27B92DC8007B3028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8KC244ECU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Simbirsoft Dairy/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NickSagan.Simbirsoft-Dairy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9164E11027B92DC8007B3028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8KC244ECU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NickSagan.Simbirsoft-DairyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simbirsoft Dairy.app/Simbirsoft Dairy";
+			};
+			name = Debug;
+		};
+		9164E11127B92DC8007B3028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8KC244ECU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NickSagan.Simbirsoft-DairyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simbirsoft Dairy.app/Simbirsoft Dairy";
+			};
+			name = Release;
+		};
+		9164E11327B92DC8007B3028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8KC244ECU;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NickSagan.Simbirsoft-DairyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Simbirsoft Dairy";
+			};
+			name = Debug;
+		};
+		9164E11427B92DC8007B3028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M8KC244ECU;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NickSagan.Simbirsoft-DairyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Simbirsoft Dairy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9164E0DD27B92DC3007B3028 /* Build configuration list for PBXProject "Simbirsoft Dairy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164E10A27B92DC8007B3028 /* Debug */,
+				9164E10B27B92DC8007B3028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9164E10C27B92DC8007B3028 /* Build configuration list for PBXNativeTarget "Simbirsoft Dairy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164E10D27B92DC8007B3028 /* Debug */,
+				9164E10E27B92DC8007B3028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9164E10F27B92DC8007B3028 /* Build configuration list for PBXNativeTarget "Simbirsoft DairyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164E11027B92DC8007B3028 /* Debug */,
+				9164E11127B92DC8007B3028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9164E11227B92DC8007B3028 /* Build configuration list for PBXNativeTarget "Simbirsoft DairyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164E11327B92DC8007B3028 /* Debug */,
+				9164E11427B92DC8007B3028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9164E0DA27B92DC3007B3028 /* Project object */;
+}
