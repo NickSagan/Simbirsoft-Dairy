@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E527B92DC3007B3028 /* AppDelegate.swift */; };
 		9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E727B92DC3007B3028 /* SceneDelegate.swift */; };
-		9164E0EA27B92DC3007B3028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* ViewController.swift */; };
-		9164E0ED27B92DC3007B3028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9164E0EB27B92DC3007B3028 /* Main.storyboard */; };
+		9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* CalendarVC.swift */; };
 		9164E0EF27B92DC7007B3028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9164E0EE27B92DC7007B3028 /* Assets.xcassets */; };
 		9164E0F227B92DC7007B3028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */; };
 		9164E0FD27B92DC8007B3028 /* Simbirsoft_DairyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0FC27B92DC8007B3028 /* Simbirsoft_DairyTests.swift */; };
 		9164E10727B92DC8007B3028 /* Simbirsoft_DairyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E10627B92DC8007B3028 /* Simbirsoft_DairyUITests.swift */; };
 		9164E10927B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */; };
+		9164E11727B92E4E007B3028 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9164E11627B92E4E007B3028 /* CalendarKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,7 @@
 		9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simbirsoft Dairy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9164E0E527B92DC3007B3028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9164E0E727B92DC3007B3028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9164E0E927B92DC3007B3028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9164E0EC27B92DC3007B3028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9164E0E927B92DC3007B3028 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		9164E0EE27B92DC7007B3028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9164E0F127B92DC7007B3028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9164E0F327B92DC7007B3028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9164E11727B92E4E007B3028 /* CalendarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +101,7 @@
 			children = (
 				9164E0E527B92DC3007B3028 /* AppDelegate.swift */,
 				9164E0E727B92DC3007B3028 /* SceneDelegate.swift */,
-				9164E0E927B92DC3007B3028 /* ViewController.swift */,
-				9164E0EB27B92DC3007B3028 /* Main.storyboard */,
+				9164E0E927B92DC3007B3028 /* CalendarVC.swift */,
 				9164E0EE27B92DC7007B3028 /* Assets.xcassets */,
 				9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */,
 				9164E0F327B92DC7007B3028 /* Info.plist */,
@@ -143,6 +142,9 @@
 			dependencies = (
 			);
 			name = "Simbirsoft Dairy";
+			packageProductDependencies = (
+				9164E11627B92E4E007B3028 /* CalendarKit */,
+			);
 			productName = "Simbirsoft Dairy";
 			productReference = 9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +217,9 @@
 				Base,
 			);
 			mainGroup = 9164E0D927B92DC3007B3028;
+			packageReferences = (
+				9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */,
+			);
 			productRefGroup = 9164E0E327B92DC3007B3028 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +238,6 @@
 			files = (
 				9164E0F227B92DC7007B3028 /* LaunchScreen.storyboard in Resources */,
 				9164E0EF27B92DC7007B3028 /* Assets.xcassets in Resources */,
-				9164E0ED27B92DC3007B3028 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9164E0EA27B92DC3007B3028 /* ViewController.swift in Sources */,
+				9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */,
 				9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */,
 				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9164E0EB27B92DC3007B3028 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9164E0EC27B92DC3007B3028 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,11 +438,13 @@
 				DEVELOPMENT_TEAM = M8KC244ECU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Simbirsoft Dairy/Info.plist";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need access to your calendar to display events";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +454,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,11 +468,13 @@
 				DEVELOPMENT_TEAM = M8KC244ECU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Simbirsoft Dairy/Info.plist";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need access to your calendar to display events";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +484,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -624,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9164E11627B92E4E007B3028 /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9164E0DA27B92DC3007B3028 /* Project object */;
 }
