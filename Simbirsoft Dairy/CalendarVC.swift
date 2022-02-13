@@ -13,7 +13,7 @@ import EventKitUI
 class CalendarVC: DayViewController {
     
     private let eventStore = EKEventStore()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Simbirsoft"
@@ -54,7 +54,18 @@ class CalendarVC: DayViewController {
         let calendarKitEvents = eventKitEvents.map(EKWrapper.init)
         return calendarKitEvents
     }
-
-
+    
+    override func dayViewDidSelectEventView(_ eventView: EventView) {
+        guard let ckEvent = eventView.descriptor as? EKWrapper else { return }
+        presentDetailViewForEvent(ckEvent.ekEvent)
+    }
+    
+    private func presentDetailViewForEvent(_ ekEvent: EKEvent) {
+        let detailVC = EKEventViewController()
+        detailVC.event = ekEvent
+        detailVC.allowsCalendarPreview = true
+        detailVC.allowsEditing = true
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
