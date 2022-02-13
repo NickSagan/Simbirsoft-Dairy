@@ -18,8 +18,6 @@
 		9164E11727B92E4E007B3028 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9164E11627B92E4E007B3028 /* CalendarKit */; };
 		9164E11927B93C2E007B3028 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11827B93C2E007B3028 /* EKWrapper.swift */; };
 		9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11A27B962AA007B3028 /* TaskModel.swift */; };
-		9164E11D27B9640B007B3028 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11C27B9640B007B3028 /* TasksModel.swift */; };
-		9164E11F27B9668A007B3028 /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 9164E11E27B9668A007B3028 /* tasks.json */; };
 		9164E12127B9693F007B3028 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E12027B9693F007B3028 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +53,6 @@
 		9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simbirsoft_DairyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9164E11827B93C2E007B3028 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
 		9164E11A27B962AA007B3028 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
-		9164E11C27B9640B007B3028 /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
-		9164E11E27B9668A007B3028 /* tasks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
 		9164E12027B9693F007B3028 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,8 +113,6 @@
 				9164E0F327B92DC7007B3028 /* Info.plist */,
 				9164E11827B93C2E007B3028 /* EKWrapper.swift */,
 				9164E11A27B962AA007B3028 /* TaskModel.swift */,
-				9164E11C27B9640B007B3028 /* TasksModel.swift */,
-				9164E11E27B9668A007B3028 /* tasks.json */,
 				9164E12027B9693F007B3028 /* DataManager.swift */,
 			);
 			path = "Simbirsoft Dairy";
@@ -253,7 +247,6 @@
 			files = (
 				9164E0F227B92DC7007B3028 /* LaunchScreen.storyboard in Resources */,
 				9164E0EF27B92DC7007B3028 /* Assets.xcassets in Resources */,
-				9164E11F27B9668A007B3028 /* tasks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +273,6 @@
 			files = (
 				9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */,
 				9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */,
-				9164E11D27B9640B007B3028 /* TasksModel.swift in Sources */,
 				9164E12127B9693F007B3028 /* DataManager.swift in Sources */,
 				9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */,
 				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
