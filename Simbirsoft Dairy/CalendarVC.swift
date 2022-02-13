@@ -141,3 +141,15 @@ class CalendarVC: DayViewController {
            endEventEditing()
        }
 }
+
+// MARK: - EKEventEditViewDelegate
+
+extension CalendarVC: EKEventEditViewDelegate {
+    
+       func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction) {
+           endEventEditing()
+           reloadData()
+           controller.dismiss(animated: true, completion: nil)
+       }
+}
+
