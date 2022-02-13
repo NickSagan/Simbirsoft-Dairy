@@ -16,7 +16,7 @@ class CalendarVC: DayViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Simbirsoft"
+        title = "Simbirsoft Dairy"
         requestAccessToCalendar()
         subscribeToNotifications()
     }
@@ -55,11 +55,13 @@ class CalendarVC: DayViewController {
         return calendarKitEvents
     }
     
+    // Обрабатываем нажатие на дело
     override func dayViewDidSelectEventView(_ eventView: EventView) {
         guard let ckEvent = eventView.descriptor as? EKWrapper else { return }
         presentDetailViewForEvent(ckEvent.ekEvent)
     }
     
+    // Открываем экран подробного описания дела
     private func presentDetailViewForEvent(_ ekEvent: EKEvent) {
         let detailVC = EKEventViewController()
         detailVC.event = ekEvent
@@ -67,5 +69,75 @@ class CalendarVC: DayViewController {
         detailVC.allowsEditing = true
         navigationController?.pushViewController(detailVC, animated: true)
     }
-}
+    
+    override func dayView(dayView: DayView, didLongPressTimelineAt date: Date) {
+        // Отменяем редактирование текущего дела и начинаем создание нового
+        endEventEditing()
+        let newEKWrapper = createNewEvent(at: date)
+        create(event: newEKWrapper, animated: true)
+    }
+    
+    private func createNewEvent(at date: Date) -> EKWrapper {
+        let newEKEvent = EKEvent(eventStore: eventStore)
+        newEKEvent.calendar = eventStore.defaultCalendarForNewEvents
+        
+        var components = DateComponents()
+        components.hour = 1
+        let endDate = calendar.date(byAdding: components, to: date)
+        
+        newEKEvent.startDate = date
+        newEKEvent.endDate = endDate
+        newEKEvent.title = "Новое дело"
+        newEKEvent.notes = "Подробное описание дела"
 
+        let newEKWrapper = EKWrapper(eventKitEvent: newEKEvent)
+        newEKWrapper.editedEvent = newEKWrapper
+        return newEKWrapper
+    }
+    
+    override func dayViewDidLongPressEventView(_ eventView: EventView) {
+           guard let descriptor = eventView.descriptor as? EKWrapper else {
+               return
+           }
+           endEventEditing()
+           beginEditing(event: descriptor,
+                        animated: true)
+       }
+       
+       override func dayView(dayView: DayView, didUpdate event: EventDescriptor) {
+           guard let editingEvent = event as? EKWrapper else { return }
+           if let originalEvent = event.editedEvent {
+               editingEvent.commitEditing()
+               
+               if originalEvent === editingEvent {
+                   // If editing event is the same as the original one, it has just been created.
+                   // Showing editing view controller
+                   presentEditingViewForEvent(editingEvent.ekEvent)
+               } else {
+                   // If editing event is different from the original,
+                   // then it's pointing to the event already in the `eventStore`
+                   // Let's save changes to oriignal event to the `eventStore`
+                   try! eventStore.save(editingEvent.ekEvent,
+                                        span: .thisEvent)
+               }
+           }
+           reloadData()
+       }
+       
+       
+       private func presentEditingViewForEvent(_ ekEvent: EKEvent) {
+           let eventEditViewController = EKEventEditViewController()
+           eventEditViewController.event = ekEvent
+           eventEditViewController.eventStore = eventStore
+           eventEditViewController.editViewDelegate = self
+           present(eventEditViewController, animated: true, completion: nil)
+       }
+       
+       override func dayView(dayView: DayView, didTapTimelineAt date: Date) {
+           endEventEditing()
+       }
+       
+       override func dayViewDidBeginDragging(dayView: DayView) {
+           endEventEditing()
+       }
+}
