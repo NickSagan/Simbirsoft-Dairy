@@ -20,6 +20,7 @@
 		9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11A27B962AA007B3028 /* TaskModel.swift */; };
 		9164E11D27B9640B007B3028 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11C27B9640B007B3028 /* TasksModel.swift */; };
 		9164E11F27B9668A007B3028 /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 9164E11E27B9668A007B3028 /* tasks.json */; };
+		9164E12127B9693F007B3028 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E12027B9693F007B3028 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		9164E11A27B962AA007B3028 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		9164E11C27B9640B007B3028 /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
 		9164E11E27B9668A007B3028 /* tasks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
+		9164E12027B9693F007B3028 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				9164E11A27B962AA007B3028 /* TaskModel.swift */,
 				9164E11C27B9640B007B3028 /* TasksModel.swift */,
 				9164E11E27B9668A007B3028 /* tasks.json */,
+				9164E12027B9693F007B3028 /* DataManager.swift */,
 			);
 			path = "Simbirsoft Dairy";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */,
 				9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */,
 				9164E11D27B9640B007B3028 /* TasksModel.swift in Sources */,
+				9164E12127B9693F007B3028 /* DataManager.swift in Sources */,
 				9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */,
 				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
 				9164E11927B93C2E007B3028 /* EKWrapper.swift in Sources */,
