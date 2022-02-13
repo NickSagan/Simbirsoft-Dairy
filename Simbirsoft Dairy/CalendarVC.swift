@@ -8,6 +8,7 @@
 import UIKit
 import CalendarKit
 import EventKit
+import EventKitUI
 
 class CalendarVC: DayViewController {
     
@@ -17,36 +18,43 @@ class CalendarVC: DayViewController {
         super.viewDidLoad()
         title = "Simbirsoft"
         requestAccessToCalendar()
+        subscribeToNotifications()
     }
     
-    // Запрашиваем доступ к календарю пользователя
+    // Запрашиваем доступ к календарю пользователя, чтобы отображать список его дел
     func requestAccessToCalendar() {
         eventStore.requestAccess(to: .event) { success, error in
             
         }
     }
     
-    // Подгружаем список дел на день из календаря
+    // Наблюдатель за изменениями в списке дел календаря пользователя
+    func subscribeToNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(storeChanged(_:)), name: .EKEventStoreChanged, object: nil)
+    }
+    
+    @objc func storeChanged(_ notification: Notification) {
+        // Обновляем UI если появилось что-то новое в списке дел
+        reloadData()
+    }
+    
+    // Подгружаем список дел на заданный день из календаря
     override func eventsForDate(_ date: Date) -> [EventDescriptor] {
+        // формируем predicate на конкретную дату
         let startDate = date
         var oneDayComponents = DateComponents()
         oneDayComponents.day = 1
         let endDate = calendar.date(byAdding: oneDayComponents, to: startDate)!
         let predicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: nil)
+        
+        // Забираем весь список дел на указанную дату (predicate) из ИвентСтора
         let eventKitEvents = eventStore.events(matching: predicate)
         
-        let calendarKitEvents = eventKitEvents.map { ekEvent -> Event in
-            let ckEvent = Event()
-            ckEvent.dateInterval = DateInterval(start: ekEvent.startDate, end: ekEvent.endDate)
-            ckEvent.isAllDay = ekEvent.isAllDay
-            ckEvent.text = ekEvent.title
-            if let eventColor = ekEvent.calendar.cgColor {
-                ckEvent.color = UIColor(cgColor: eventColor)
-            }
-            return ckEvent
-        }
+        // Event Kit Events конвертируем в Calendar Kit Events
+        let calendarKitEvents = eventKitEvents.map(EKWrapper.init)
         return calendarKitEvents
     }
+
 
 }
 
