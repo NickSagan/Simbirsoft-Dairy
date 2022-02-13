@@ -17,6 +17,8 @@
 		9164E10927B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */; };
 		9164E11727B92E4E007B3028 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9164E11627B92E4E007B3028 /* CalendarKit */; };
 		9164E11927B93C2E007B3028 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11827B93C2E007B3028 /* EKWrapper.swift */; };
+		9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11A27B962AA007B3028 /* TaskModel.swift */; };
+		9164E11D27B9640B007B3028 /* TasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11C27B9640B007B3028 /* TasksModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		9164E10627B92DC8007B3028 /* Simbirsoft_DairyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simbirsoft_DairyUITests.swift; sourceTree = "<group>"; };
 		9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simbirsoft_DairyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9164E11827B93C2E007B3028 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
+		9164E11A27B962AA007B3028 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		9164E11C27B9640B007B3028 /* TasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */,
 				9164E0F327B92DC7007B3028 /* Info.plist */,
 				9164E11827B93C2E007B3028 /* EKWrapper.swift */,
+				9164E11A27B962AA007B3028 /* TaskModel.swift */,
+				9164E11C27B9640B007B3028 /* TasksModel.swift */,
 			);
 			path = "Simbirsoft Dairy";
 			sourceTree = "<group>";
@@ -267,6 +273,8 @@
 			files = (
 				9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */,
 				9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */,
+				9164E11D27B9640B007B3028 /* TasksModel.swift in Sources */,
+				9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */,
 				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
 				9164E11927B93C2E007B3028 /* EKWrapper.swift in Sources */,
 			);
