@@ -28,7 +28,7 @@ class Simbirsoft_DairyTests: XCTestCase {
         XCTAssertEqual(result[0].date_finish, 147610000)
     }
     
-    func testAdapterGetEventsFromTasks() {
+    func testAdapterGetEventsFromTasks() throws {
         let adapter = Adapter()
         let testTask = TaskModel(id: 11, date_start: 147600008, date_finish: 147610008, name: " Task In English 123-=!@#$%ˆ&*()_", description: " описание на русском 123-=!@#$%ˆ&*()_")
         let result = adapter.getEvents(from: [testTask, testTask, testTask])
