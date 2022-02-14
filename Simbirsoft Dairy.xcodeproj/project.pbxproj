@@ -17,6 +17,9 @@
 		91393F0E27BA532700EB5804 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0D27BA532700EB5804 /* AddTaskVC.swift */; };
 		91393F1127BA57B000EB5804 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91393F1027BA57B000EB5804 /* IQKeyboardManagerSwift */; };
 		91393F1327BA6C0100EB5804 /* IDFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F1227BA6C0100EB5804 /* IDFabric.swift */; };
+		91393F1527BA779800EB5804 /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F1427BA779800EB5804 /* OnboardVC.swift */; };
+		91393F2E27BA7A6200EB5804 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 91393F1A27BA7A6200EB5804 /* SF-Pro-Display-Light.otf */; };
+		91393F3027BA7A6200EB5804 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 91393F1C27BA7A6200EB5804 /* SF-Pro-Display-Bold.otf */; };
 		9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E527B92DC3007B3028 /* AppDelegate.swift */; };
 		9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E727B92DC3007B3028 /* SceneDelegate.swift */; };
 		9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* CalendarVC.swift */; };
@@ -64,6 +67,9 @@
 		91393F0B27BA4C2E00EB5804 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		91393F0D27BA532700EB5804 /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
 		91393F1227BA6C0100EB5804 /* IDFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDFabric.swift; sourceTree = "<group>"; };
+		91393F1427BA779800EB5804 /* OnboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardVC.swift; sourceTree = "<group>"; };
+		91393F1A27BA7A6200EB5804 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		91393F1C27BA7A6200EB5804 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simbirsoft Dairy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9164E0E527B92DC3007B3028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9164E0E727B92DC3007B3028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +147,15 @@
 			path = "Add Task View";
 			sourceTree = "<group>";
 		};
+		91393F1627BA7A6200EB5804 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				91393F1A27BA7A6200EB5804 /* SF-Pro-Display-Light.otf */,
+				91393F1C27BA7A6200EB5804 /* SF-Pro-Display-Bold.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		9164E0D927B92DC3007B3028 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +213,7 @@
 		9164E12527B96DAF007B3028 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				91393F1627BA7A6200EB5804 /* fonts */,
 				9164E0EE27B92DC7007B3028 /* Assets.xcassets */,
 				9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */,
 			);
@@ -210,6 +226,7 @@
 				9164E0E927B92DC3007B3028 /* CalendarVC.swift */,
 				91393F0227BA3E2400EB5804 /* DetailVC.swift */,
 				91393F0D27BA532700EB5804 /* AddTaskVC.swift */,
+				91393F1427BA779800EB5804 /* OnboardVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -236,7 +253,6 @@
 				38E0F939E648C437A4E8B370 /* Pods-Simbirsoft DairyTests.debug.xcconfig */,
 				A4D314C416D33C563BABE0E9 /* Pods-Simbirsoft DairyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -348,8 +364,8 @@
 			);
 			mainGroup = 9164E0D927B92DC3007B3028;
 			packageReferences = (
-				9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit.git" */,
-				91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */,
+				9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */,
+				91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 9164E0E327B92DC3007B3028 /* Products */;
 			projectDirPath = "";
@@ -367,6 +383,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91393F2E27BA7A6200EB5804 /* SF-Pro-Display-Light.otf in Resources */,
+				91393F3027BA7A6200EB5804 /* SF-Pro-Display-Bold.otf in Resources */,
 				91393F0127BA3B1D00EB5804 /* DetailView.xib in Resources */,
 				9164E0F227B92DC7007B3028 /* LaunchScreen.storyboard in Resources */,
 				9164E0EF27B92DC7007B3028 /* Assets.xcassets in Resources */,
@@ -507,6 +525,7 @@
 				9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */,
 				91393F0E27BA532700EB5804 /* AddTaskVC.swift in Sources */,
 				91393F0327BA3E2400EB5804 /* DetailVC.swift in Sources */,
+				91393F1527BA779800EB5804 /* OnboardVC.swift in Sources */,
 				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
 				9164E12B27B9992E007B3028 /* EventModel.swift in Sources */,
 				91393EFB27BA325500EB5804 /* Adapter.swift in Sources */,
@@ -877,7 +896,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */ = {
+		91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
@@ -885,7 +904,7 @@
 				kind = branch;
 			};
 		};
-		9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit.git" */ = {
+		9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
 			requirement = {
@@ -898,12 +917,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		91393F1027BA57B000EB5804 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */;
+			package = 91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
 		9164E11627B92E4E007B3028 /* CalendarKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit.git" */;
+			package = 9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */;
 			productName = CalendarKit;
 		};
 /* End XCSwiftPackageProductDependency section */
