@@ -13,6 +13,7 @@
 		91393F0327BA3E2400EB5804 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0227BA3E2400EB5804 /* DetailVC.swift */; };
 		91393F0527BA3E7500EB5804 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0427BA3E7500EB5804 /* DetailView.swift */; };
 		91393F0C27BA4C2E00EB5804 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0B27BA4C2E00EB5804 /* AddTaskView.swift */; };
+		91393F0E27BA532700EB5804 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0D27BA532700EB5804 /* AddTaskVC.swift */; };
 		9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E527B92DC3007B3028 /* AppDelegate.swift */; };
 		9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E727B92DC3007B3028 /* SceneDelegate.swift */; };
 		9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* CalendarVC.swift */; };
@@ -51,6 +52,7 @@
 		91393F0227BA3E2400EB5804 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		91393F0427BA3E7500EB5804 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		91393F0B27BA4C2E00EB5804 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		91393F0D27BA532700EB5804 /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
 		9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simbirsoft Dairy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9164E0E527B92DC3007B3028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9164E0E727B92DC3007B3028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			children = (
 				9164E0E927B92DC3007B3028 /* CalendarVC.swift */,
 				91393F0227BA3E2400EB5804 /* DetailVC.swift */,
+				91393F0D27BA532700EB5804 /* AddTaskVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				91393F0527BA3E7500EB5804 /* DetailView.swift in Sources */,
 				91393EFD27BA373000EB5804 /* Extensions.swift in Sources */,
 				9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */,
+				91393F0E27BA532700EB5804 /* AddTaskVC.swift in Sources */,
 				91393F0327BA3E2400EB5804 /* DetailVC.swift in Sources */,
 				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
 				9164E12B27B9992E007B3028 /* EventModel.swift in Sources */,
