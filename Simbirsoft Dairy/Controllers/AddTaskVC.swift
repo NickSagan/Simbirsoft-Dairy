@@ -16,7 +16,44 @@ class AddTaskVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         addView()
-//        displayEvent()
+        addTaskView.addTaskButton.addTarget(self, action: #selector(addTask), for: .touchUpInside)
+        
+        // Tap recognizer to dismiss keyboard on outside tap
+        let tapGestureReconizer = UITapGestureRecognizer(target: self, action: #selector(tap))
+        tapGestureReconizer.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGestureReconizer)
+    }
+    
+    @objc func addTask() {
+        // Check user input
+        guard let name = addTaskView.nameTextField.text, name != "" else { return }
+        let start = addTaskView.startDatePicker.date
+        var finish = addTaskView.finishDatePicker.date
+        
+        // incomplete temporary logic
+        if finish.timeIntervalSince1970 < start.timeIntervalSince1970 + 1800 {
+            finish = Date(timeIntervalSince1970: start.timeIntervalSince1970 + 1800)
+        }
+        
+        // Create new Event instance
+        let event = EventModel()
+        event.id = IDFabric.shared.getUniqueID()
+        event.text = name
+        event.description = addTaskView.descriptionTextField.text ?? ""
+        event.dateInterval = DateInterval(start: start, end: finish)
+        
+        // Save new data
+        var events = DataManager.shared.events
+        events.append(event)
+        DataManager.shared.events = events
+        
+        // Dismiss VC
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    // Dismiss keyboard
+    @objc private func tap(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
     func addView() {
@@ -30,11 +67,4 @@ class AddTaskVC: UIViewController {
             addTaskView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
     }
-    
-//    func displayEvent() {
-//        detailView.name.text = event.text
-//        detailView.start.text = "Start: \(event.dateInterval.start.dateString())"
-//        detailView.finish.text = "Finish: \(event.dateInterval.end.dateString())"
-//        detailView.descriptionText.text = event.description
-//    }
 }
