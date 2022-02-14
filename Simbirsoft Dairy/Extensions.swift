@@ -16,3 +16,13 @@ extension URL {
         return subDirectory.appendingPathComponent("tasks.json")
     }
 }
+
+extension Date {
+    func dateString() -> String {
+        let date = self
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd HH:mm"
+        let dateString = df.string(from: date)
+        return dateString
+    }
+}
