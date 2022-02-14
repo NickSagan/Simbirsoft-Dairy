@@ -7,6 +7,7 @@
 
 import Foundation
 
+// JSON storage URL
 extension URL {
     static var tasks: URL {
         let applicationSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
@@ -17,6 +18,7 @@ extension URL {
     }
 }
 
+// Returns String from Date
 extension Date {
     func dateString() -> String {
         let date = self

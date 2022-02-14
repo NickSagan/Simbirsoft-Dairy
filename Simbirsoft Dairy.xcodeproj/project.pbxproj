@@ -92,6 +92,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91393F0627BA4A5F00EB5804 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91393F0827BA4B3700EB5804 /* Add Task View */,
+				91393F0727BA4A8200EB5804 /* Detail View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91393F0727BA4A8200EB5804 /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				91393F0027BA3B1D00EB5804 /* DetailView.xib */,
+				91393F0427BA3E7500EB5804 /* DetailView.swift */,
+			);
+			path = "Detail View";
+			sourceTree = "<group>";
+		};
+		91393F0827BA4B3700EB5804 /* Add Task View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Add Task View";
+			sourceTree = "<group>";
+		};
 		9164E0D927B92DC3007B3028 = {
 			isa = PBXGroup;
 			children = (
@@ -118,10 +143,11 @@
 				9164E0E527B92DC3007B3028 /* AppDelegate.swift */,
 				9164E0E727B92DC3007B3028 /* SceneDelegate.swift */,
 				9164E12727B96DCB007B3028 /* Models */,
-				9164E12627B96DC2007B3028 /* Controller */,
+				91393F0627BA4A5F00EB5804 /* Views */,
+				9164E12627B96DC2007B3028 /* Controllers */,
 				9164E0F327B92DC7007B3028 /* Info.plist */,
-				9164E12527B96DAF007B3028 /* Resources */,
 				91393EFC27BA373000EB5804 /* Extensions.swift */,
+				9164E12527B96DAF007B3028 /* Resources */,
 			);
 			path = "Simbirsoft Dairy";
 			sourceTree = "<group>";
@@ -152,15 +178,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		9164E12627B96DC2007B3028 /* Controller */ = {
+		9164E12627B96DC2007B3028 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				9164E0E927B92DC3007B3028 /* CalendarVC.swift */,
-				91393F0027BA3B1D00EB5804 /* DetailView.xib */,
-				91393F0427BA3E7500EB5804 /* DetailView.swift */,
 				91393F0227BA3E2400EB5804 /* DetailVC.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9164E12727B96DCB007B3028 /* Models */ = {
