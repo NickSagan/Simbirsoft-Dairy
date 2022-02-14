@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91393EFB27BA325500EB5804 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393EFA27BA325500EB5804 /* Adapter.swift */; };
 		9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E527B92DC3007B3028 /* AppDelegate.swift */; };
 		9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E727B92DC3007B3028 /* SceneDelegate.swift */; };
 		9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* CalendarVC.swift */; };
@@ -16,9 +17,9 @@
 		9164E10727B92DC8007B3028 /* Simbirsoft_DairyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E10627B92DC8007B3028 /* Simbirsoft_DairyUITests.swift */; };
 		9164E10927B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */; };
 		9164E11727B92E4E007B3028 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9164E11627B92E4E007B3028 /* CalendarKit */; };
-		9164E11927B93C2E007B3028 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11827B93C2E007B3028 /* EKWrapper.swift */; };
 		9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11A27B962AA007B3028 /* TaskModel.swift */; };
 		9164E12127B9693F007B3028 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E12027B9693F007B3028 /* DataManager.swift */; };
+		9164E12B27B9992E007B3028 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E12A27B9992E007B3028 /* EventModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91393EFA27BA325500EB5804 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simbirsoft Dairy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9164E0E527B92DC3007B3028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9164E0E727B92DC3007B3028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,9 +53,9 @@
 		9164E10227B92DC8007B3028 /* Simbirsoft DairyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simbirsoft DairyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9164E10627B92DC8007B3028 /* Simbirsoft_DairyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simbirsoft_DairyUITests.swift; sourceTree = "<group>"; };
 		9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simbirsoft_DairyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9164E11827B93C2E007B3028 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
 		9164E11A27B962AA007B3028 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		9164E12027B9693F007B3028 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9164E12A27B9992E007B3028 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +109,10 @@
 			children = (
 				9164E0E527B92DC3007B3028 /* AppDelegate.swift */,
 				9164E0E727B92DC3007B3028 /* SceneDelegate.swift */,
-				9164E0E927B92DC3007B3028 /* CalendarVC.swift */,
-				9164E0EE27B92DC7007B3028 /* Assets.xcassets */,
-				9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */,
+				9164E12727B96DCB007B3028 /* Models */,
+				9164E12627B96DC2007B3028 /* Controller */,
 				9164E0F327B92DC7007B3028 /* Info.plist */,
-				9164E11827B93C2E007B3028 /* EKWrapper.swift */,
-				9164E11A27B962AA007B3028 /* TaskModel.swift */,
-				9164E12027B9693F007B3028 /* DataManager.swift */,
+				9164E12527B96DAF007B3028 /* Resources */,
 			);
 			path = "Simbirsoft Dairy";
 			sourceTree = "<group>";
@@ -133,6 +132,34 @@
 				9164E10827B92DC8007B3028 /* Simbirsoft_DairyUITestsLaunchTests.swift */,
 			);
 			path = "Simbirsoft DairyUITests";
+			sourceTree = "<group>";
+		};
+		9164E12527B96DAF007B3028 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9164E0EE27B92DC7007B3028 /* Assets.xcassets */,
+				9164E0F027B92DC7007B3028 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9164E12627B96DC2007B3028 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9164E0E927B92DC3007B3028 /* CalendarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9164E12727B96DCB007B3028 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9164E11A27B962AA007B3028 /* TaskModel.swift */,
+				9164E12A27B9992E007B3028 /* EventModel.swift */,
+				9164E12027B9693F007B3028 /* DataManager.swift */,
+				91393EFA27BA325500EB5804 /* Adapter.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +303,8 @@
 				9164E12127B9693F007B3028 /* DataManager.swift in Sources */,
 				9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */,
 				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
-				9164E11927B93C2E007B3028 /* EKWrapper.swift in Sources */,
+				9164E12B27B9992E007B3028 /* EventModel.swift in Sources */,
+				91393EFB27BA325500EB5804 /* Adapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

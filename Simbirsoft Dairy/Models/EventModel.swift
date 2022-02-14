@@ -1,5 +1,5 @@
 //
-//  EKWrapper.swift
+//  EventModel.swift
 //  Simbirsoft Dairy
 //
 //  Created by Nick Sagan on 13.02.2022.
@@ -7,75 +7,53 @@
 
 import UIKit
 import CalendarKit
-import EventKit
 
-public final class EKWrapper: EventDescriptor {
-    public var dateInterval: DateInterval {
-        get {
-            DateInterval(start: ekEvent.startDate, end: ekEvent.endDate)
-        }
-        
-        set {
-            ekEvent.startDate = newValue.start
-            ekEvent.endDate = newValue.end
-        }
-    }
+final class EventModel: EventDescriptor {
     
-    public var isAllDay: Bool {
-        get {
-            ekEvent.isAllDay
-        }
-        set {
-            ekEvent.isAllDay = newValue
-        }
-    }
-    
-    public var text: String {
-        get {
-            ekEvent.title
-        }
-        
-        set {
-            ekEvent.title = newValue
-        }
-    }
-
+    public var dateInterval = DateInterval()
+    public var isAllDay = false
+    public var text = ""
+    public var description = ""
+    public var id: Int?
     public var attributedText: NSAttributedString?
     public var lineBreakMode: NSLineBreakMode?
-    
-    public var color: UIColor {
-        get {
-            UIColor(cgColor: ekEvent.calendar.cgColor)
-        }
+    public var color = SystemColors.systemBlue {
+      didSet {
+        updateColors()
+      }
     }
-    
-    public var backgroundColor = UIColor()
+    public var backgroundColor = SystemColors.systemBlue.withAlphaComponent(0.3)
     public var textColor = SystemColors.label
     public var font = UIFont.boldSystemFont(ofSize: 12)
+    public var userInfo: Any?
     public weak var editedEvent: EventDescriptor? {
-        didSet {
-            updateColors()
-        }
+      didSet {
+        updateColors()
+      }
     }
-    
-    public private(set) var ekEvent: EKEvent
-    
-    public init(eventKitEvent: EKEvent) {
-        self.ekEvent = eventKitEvent
-        applyStandardColors()
+
+    public init() {}
+
+    public func makeEditable() -> EventModel {
+      let cloned = EventModel()
+      cloned.dateInterval = dateInterval
+      cloned.isAllDay = isAllDay
+      cloned.text = text
+      cloned.attributedText = attributedText
+      cloned.lineBreakMode = lineBreakMode
+      cloned.color = color
+      cloned.backgroundColor = backgroundColor
+      cloned.textColor = textColor
+      cloned.userInfo = userInfo
+      cloned.editedEvent = self
+      return cloned
     }
-    
-    public func makeEditable() -> Self {
-        let cloned = Self(eventKitEvent: ekEvent)
-        cloned.editedEvent = self
-        return cloned
-    }
-    
+
     public func commitEditing() {
-        guard let edited = editedEvent else {return}
-        edited.dateInterval = dateInterval
+      guard let edited = editedEvent else {return}
+      edited.dateInterval = dateInterval
     }
-    
+
     private func updateColors() {
       (editedEvent != nil) ? applyEditingColors() : applyStandardColors()
     }
@@ -136,4 +114,4 @@ public final class EKWrapper: EventDescriptor {
         return light
       }
     }
-}
+  }
