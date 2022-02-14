@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		91393EFB27BA325500EB5804 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393EFA27BA325500EB5804 /* Adapter.swift */; };
+		91393EFD27BA373000EB5804 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393EFC27BA373000EB5804 /* Extensions.swift */; };
 		9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E527B92DC3007B3028 /* AppDelegate.swift */; };
 		9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E727B92DC3007B3028 /* SceneDelegate.swift */; };
 		9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* CalendarVC.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		91393EFA27BA325500EB5804 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		91393EFC27BA373000EB5804 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simbirsoft Dairy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9164E0E527B92DC3007B3028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9164E0E727B92DC3007B3028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				9164E12627B96DC2007B3028 /* Controller */,
 				9164E0F327B92DC7007B3028 /* Info.plist */,
 				9164E12527B96DAF007B3028 /* Resources */,
+				91393EFC27BA373000EB5804 /* Extensions.swift */,
 			);
 			path = "Simbirsoft Dairy";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */,
 				9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */,
 				9164E12127B9693F007B3028 /* DataManager.swift in Sources */,
+				91393EFD27BA373000EB5804 /* Extensions.swift in Sources */,
 				9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */,
 				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
 				9164E12B27B9992E007B3028 /* EventModel.swift in Sources */,
