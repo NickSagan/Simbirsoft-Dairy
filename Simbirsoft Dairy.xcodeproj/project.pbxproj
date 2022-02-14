@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		91393EFB27BA325500EB5804 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393EFA27BA325500EB5804 /* Adapter.swift */; };
 		91393EFD27BA373000EB5804 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393EFC27BA373000EB5804 /* Extensions.swift */; };
+		91393F0127BA3B1D00EB5804 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91393F0027BA3B1D00EB5804 /* DetailView.xib */; };
+		91393F0327BA3E2400EB5804 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0227BA3E2400EB5804 /* DetailVC.swift */; };
+		91393F0527BA3E7500EB5804 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0427BA3E7500EB5804 /* DetailView.swift */; };
 		9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E527B92DC3007B3028 /* AppDelegate.swift */; };
 		9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E727B92DC3007B3028 /* SceneDelegate.swift */; };
 		9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* CalendarVC.swift */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		91393EFA27BA325500EB5804 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		91393EFC27BA373000EB5804 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		91393F0027BA3B1D00EB5804 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		91393F0227BA3E2400EB5804 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		91393F0427BA3E7500EB5804 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simbirsoft Dairy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9164E0E527B92DC3007B3028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9164E0E727B92DC3007B3028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				9164E0E927B92DC3007B3028 /* CalendarVC.swift */,
+				91393F0027BA3B1D00EB5804 /* DetailView.xib */,
+				91393F0427BA3E7500EB5804 /* DetailView.swift */,
+				91393F0227BA3E2400EB5804 /* DetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91393F0127BA3B1D00EB5804 /* DetailView.xib in Resources */,
 				9164E0F227B92DC7007B3028 /* LaunchScreen.storyboard in Resources */,
 				9164E0EF27B92DC7007B3028 /* Assets.xcassets in Resources */,
 			);
@@ -304,8 +314,10 @@
 				9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */,
 				9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */,
 				9164E12127B9693F007B3028 /* DataManager.swift in Sources */,
+				91393F0527BA3E7500EB5804 /* DetailView.swift in Sources */,
 				91393EFD27BA373000EB5804 /* Extensions.swift in Sources */,
 				9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */,
+				91393F0327BA3E2400EB5804 /* DetailVC.swift in Sources */,
 				9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */,
 				9164E12B27B9992E007B3028 /* EventModel.swift in Sources */,
 				91393EFB27BA325500EB5804 /* Adapter.swift in Sources */,
