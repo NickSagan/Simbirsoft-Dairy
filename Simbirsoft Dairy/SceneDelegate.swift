@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
 
-        if (UserDefaults.standard.bool(forKey: "notFirstLaunch") == true) {
+        if (UserDefaults.standard.bool(forKey: "notFirstLaunch") == false) {
             UserDefaults.standard.set(true, forKey: "notFirstLaunch")
             window?.rootViewController = OnboardVC()
         } else {

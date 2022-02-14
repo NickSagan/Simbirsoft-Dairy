@@ -7,7 +7,7 @@
 
 import Foundation
 
-// ID Fabcric. Creates unique identifier for tasks/events
+// ID Fabcric. Creates unique identifier for user generated tasks/events
 class IDFabric {
 
     static let shared = IDFabric()

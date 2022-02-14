@@ -20,6 +20,8 @@
 		91393F1527BA779800EB5804 /* OnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F1427BA779800EB5804 /* OnboardVC.swift */; };
 		91393F2E27BA7A6200EB5804 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 91393F1A27BA7A6200EB5804 /* SF-Pro-Display-Light.otf */; };
 		91393F3027BA7A6200EB5804 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 91393F1C27BA7A6200EB5804 /* SF-Pro-Display-Bold.otf */; };
+		91393F4327BAA00000EB5804 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 91393F4227BAA00000EB5804 /* Realm */; };
+		91393F4527BAA00000EB5804 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91393F4427BAA00000EB5804 /* RealmSwift */; };
 		9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E527B92DC3007B3028 /* AppDelegate.swift */; };
 		9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E727B92DC3007B3028 /* SceneDelegate.swift */; };
 		9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* CalendarVC.swift */; };
@@ -98,6 +100,8 @@
 			files = (
 				9164E11727B92E4E007B3028 /* CalendarKit in Frameworks */,
 				91393F1127BA57B000EB5804 /* IQKeyboardManagerSwift in Frameworks */,
+				91393F4327BAA00000EB5804 /* Realm in Frameworks */,
+				91393F4527BAA00000EB5804 /* RealmSwift in Frameworks */,
 				5CB4A0CF92E11163BDBB5662 /* Pods_Simbirsoft_Dairy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,8 @@
 			packageProductDependencies = (
 				9164E11627B92E4E007B3028 /* CalendarKit */,
 				91393F1027BA57B000EB5804 /* IQKeyboardManagerSwift */,
+				91393F4227BAA00000EB5804 /* Realm */,
+				91393F4427BAA00000EB5804 /* RealmSwift */,
 			);
 			productName = "Simbirsoft Dairy";
 			productReference = 9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */;
@@ -366,6 +372,7 @@
 			packageReferences = (
 				9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */,
 				91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				91393F4127BAA00000EB5804 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 9164E0E327B92DC3007B3028 /* Products */;
 			projectDirPath = "";
@@ -904,6 +911,14 @@
 				kind = branch;
 			};
 		};
+		91393F4127BAA00000EB5804 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
@@ -919,6 +934,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		91393F4227BAA00000EB5804 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91393F4127BAA00000EB5804 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		91393F4427BAA00000EB5804 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91393F4127BAA00000EB5804 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 		9164E11627B92E4E007B3028 /* CalendarKit */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -8,6 +8,7 @@
 import UIKit
 import CalendarKit
 
+// Modified Event class (CalendarKit). Added: description, id
 final class EventModel: EventDescriptor {
     
     public var dateInterval = DateInterval()

@@ -59,8 +59,10 @@ class OnboardVC: UIViewController {
 
 extension OnboardVC: SwiftyOnboardDataSource, SwiftyOnboardDelegate {
     
+    // Setup onboarding pages
+    
     func swiftyOnboardNumberOfPages(_ swiftyOnboard: SwiftyOnboard) -> Int {
-        3
+        onboardTitleArray.count
     }
 
     func swiftyOnboardPageForIndex(_ swiftyOnboard: SwiftyOnboard, index: Int) -> SwiftyOnboardPage? {
@@ -83,6 +85,8 @@ extension OnboardVC: SwiftyOnboardDataSource, SwiftyOnboardDelegate {
         
         return page
     }
+    
+    // Setup onboarding overlay
     
     func swiftyOnboardViewForOverlay(_ swiftyOnboard: SwiftyOnboard) -> SwiftyOnboardOverlay? {
         let overlay = SwiftyOnboardOverlay()

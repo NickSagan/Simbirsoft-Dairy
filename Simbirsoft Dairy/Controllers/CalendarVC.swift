@@ -22,10 +22,8 @@ class CalendarVC: DayViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        // Check for updates
         events = DataManager.shared.events
-        for event in events {
-            print(event.id, event.text)
-        }
         reloadData()
     }
     
@@ -34,18 +32,18 @@ class CalendarVC: DayViewController {
         navigationController?.pushViewController(atvc, animated: true)
     }
     
-    // Подгружаем список дел на заданный день
+    // Upload events/tasks
     override func eventsForDate(_ date: Date) -> [EventDescriptor] {
         return events
     }
 
-    // Обрабатываем нажатие на дело
+    // Handle event/task tap
     override func dayViewDidSelectEventView(_ eventView: EventView) {
         guard let eventModel = eventView.descriptor as? EventModel else { return }
         presentDetailViewForEvent(eventModel)
     }
 
-    // Открываем экран подробного описания дела
+    // Push detailed view controller
     private func presentDetailViewForEvent(_ event: EventModel) {
         let dvc = DetailVC()
         dvc.event = event
