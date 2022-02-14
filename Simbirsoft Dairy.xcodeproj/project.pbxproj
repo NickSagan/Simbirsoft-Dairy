@@ -183,11 +183,11 @@
 			children = (
 				9164E0E527B92DC3007B3028 /* AppDelegate.swift */,
 				9164E0E727B92DC3007B3028 /* SceneDelegate.swift */,
+				91393EFC27BA373000EB5804 /* Extensions.swift */,
 				9164E12727B96DCB007B3028 /* Models */,
 				91393F0627BA4A5F00EB5804 /* Views */,
 				9164E12627B96DC2007B3028 /* Controllers */,
 				9164E0F327B92DC7007B3028 /* Info.plist */,
-				91393EFC27BA373000EB5804 /* Extensions.swift */,
 				9164E12527B96DAF007B3028 /* Resources */,
 			);
 			path = "Simbirsoft Dairy";
