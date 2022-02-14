@@ -10,33 +10,26 @@ import CalendarKit // https://cocoapods.org/pods/CalendarKit
 
 class CalendarVC: DayViewController {
 
-    var dataManager: DataManager!
     var tasks: [TaskModel] = [TaskModel(id: 1, date_start: 1644775438, date_finish: 1644776438, name: "Дело Номер 1", description: "Подробное описание дела номер 1"), TaskModel(id: 2, date_start: 1644851038, date_finish: 1644861038, name: "Дело Номер 2", description: "Подробное описание дела номер 2")]
     var events = [EventModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Simbirsoft Dairy"
-
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addEvent))
+    }
+    
+    @objc func addEvent() {
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        //tasks = DataManager.shared.tasks
+        events = DataManager.shared.events
     }
     
     // Подгружаем список дел на заданный день
     override func eventsForDate(_ date: Date) -> [EventDescriptor] {
-        let models = tasks
-
-        for model in models {
-            let event = EventModel()
-            event.dateInterval = DateInterval(start: Date(timeIntervalSince1970: model.date_start), end: Date(timeIntervalSince1970: model.date_start + 3600))
-            event.text = model.name
-            event.description = model.description
-            events.append(event)
-        }
- 
-        return events
+        events
     }
 
     // Обрабатываем нажатие на дело
