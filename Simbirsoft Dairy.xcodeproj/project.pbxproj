@@ -14,6 +14,7 @@
 		91393F0527BA3E7500EB5804 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0427BA3E7500EB5804 /* DetailView.swift */; };
 		91393F0C27BA4C2E00EB5804 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0B27BA4C2E00EB5804 /* AddTaskView.swift */; };
 		91393F0E27BA532700EB5804 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393F0D27BA532700EB5804 /* AddTaskVC.swift */; };
+		91393F1127BA57B000EB5804 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91393F1027BA57B000EB5804 /* IQKeyboardManagerSwift */; };
 		9164E0E627B92DC3007B3028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E527B92DC3007B3028 /* AppDelegate.swift */; };
 		9164E0E827B92DC3007B3028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E727B92DC3007B3028 /* SceneDelegate.swift */; };
 		9164E0EA27B92DC3007B3028 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E0E927B92DC3007B3028 /* CalendarVC.swift */; };
@@ -76,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9164E11727B92E4E007B3028 /* CalendarKit in Frameworks */,
+				91393F1127BA57B000EB5804 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +224,7 @@
 			name = "Simbirsoft Dairy";
 			packageProductDependencies = (
 				9164E11627B92E4E007B3028 /* CalendarKit */,
+				91393F1027BA57B000EB5804 /* IQKeyboardManagerSwift */,
 			);
 			productName = "Simbirsoft Dairy";
 			productReference = 9164E0E227B92DC3007B3028 /* Simbirsoft Dairy.app */;
@@ -297,6 +300,7 @@
 			mainGroup = 9164E0D927B92DC3007B3028;
 			packageReferences = (
 				9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */,
+				91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 9164E0E327B92DC3007B3028 /* Products */;
 			projectDirPath = "";
@@ -714,6 +718,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
@@ -725,6 +737,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		91393F1027BA57B000EB5804 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
 		9164E11627B92E4E007B3028 /* CalendarKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */;
