@@ -10,10 +10,9 @@ import SwiftyOnboard
 
 class OnboardVC: UIViewController {
     
-    let onboardTitleArray: [String] = ["Keep your diary", "Add tasks", "Share with friends"]
-    let onboardSubTitleArray: [String] = ["everything is at your fingertips", "Easily add new tasks", "One tap to share your task with people"]
-    let author: String = "created by Nick Sagan, as a SimbirSoft TestTask"
-    
+    let onboardTitleArray: [String] = ["Keep your diary", "Add New Tasks", "Share With Friends"]
+    let onboardSubTitleArray: [String] = [" Scroll through the months", "Don't forget anything", "Created by Nikolai Saganenko as a SimbirSoft test task"]
+
     var swiftyOnboard: SwiftyOnboard!
     
     override func viewDidLoad() {
@@ -35,17 +34,24 @@ class OnboardVC: UIViewController {
     }
 
     @objc func handleSkip() {
-        swiftyOnboard?.goToPage(index: 2, animated: true)
+        goToCalendar()
     }
     
     @objc func handleContinue(sender: UIButton) {
         let index = sender.tag
         if index == 2 {
-            print("Go to Calendar")
+            goToCalendar()
         } else {
             print("Next")
             swiftyOnboard?.goToPage(index: index + 1, animated: true)
         }
+    }
+    
+    func goToCalendar() {
+        let nc = UINavigationController(rootViewController: CalendarVC())
+        nc.navigationBar.backgroundColor = .systemBackground
+        nc.modalPresentationStyle = .overFullScreen
+        present(nc, animated: true, completion: nil)
     }
 }
 
@@ -73,7 +79,7 @@ extension OnboardVC: SwiftyOnboardDataSource, SwiftyOnboardDelegate {
             swiftyOnboard.backgroundColor = .white
         }
 
-        //page.imageView.image = UIImage(named: "\(index).png")
+        page.imageView.image = UIImage(named: "\(index).jpeg")
         
         return page
     }
@@ -99,7 +105,6 @@ extension OnboardVC: SwiftyOnboardDataSource, SwiftyOnboardDelegate {
             overlay.skipButton.isHidden = false
         } else {
             overlay.continueButton.setTitle("Get Started!", for: .normal)
-            overlay.skipButton.isHidden = true
         }
     }
 }

@@ -8,6 +8,7 @@
 import Foundation
 
 // Converts Simbirsoft JSON "task" (TaskModel) type into CalendarKit "event" (EventModel) type and vice versa
+
 struct Adapter {
     
     // get Simbirsoft JSON [TaskModel] from CalendarKit [EventModel]

@@ -18,11 +18,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let vc = CalendarVC()
-        let nc = UINavigationController(rootViewController: vc)
-        nc.navigationBar.backgroundColor = .systemBackground
+
+        if (UserDefaults.standard.bool(forKey: "notFirstLaunch") == true) {
+            UserDefaults.standard.set(true, forKey: "notFirstLaunch")
+            window?.rootViewController = OnboardVC()
+        } else {
+            let nc = UINavigationController(rootViewController: CalendarVC())
+            nc.navigationBar.backgroundColor = .systemBackground
+            window?.rootViewController = nc
+        }
+        
         window?.backgroundColor = .systemBackground
-        window?.rootViewController = nc
         window?.makeKeyAndVisible()
     }
 
