@@ -46,7 +46,7 @@ class AddTaskView: UIView {
     
     var finishLabel: UILabel = {
         let label = UILabel()
-        label.text = "Start date:"
+        label.text = "Finish date:"
         label.textAlignment = .left
         label.numberOfLines = 0
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
@@ -57,7 +57,7 @@ class AddTaskView: UIView {
     
     var nameTextField: UITextField = {
         let txt = UITextField()
-        txt.placeholder = "Task name"
+        txt.placeholder = " Task name"
         txt.layer.borderColor = UIColor.gray.cgColor
         txt.layer.borderWidth = 1.0
         txt.layer.cornerRadius = 5.0
@@ -66,12 +66,12 @@ class AddTaskView: UIView {
         return txt
     }()
     
-    var descriptionTextField: UITextField = {
-        let txt = UITextField()
-        txt.placeholder = "Description name"
+    var descriptionTextField: UITextView = {
+        let txt = UITextView()
         txt.layer.borderColor = UIColor.gray.cgColor
         txt.layer.borderWidth = 1.0
         txt.layer.cornerRadius = 5.0
+        txt.sizeToFit()
         txt.accessibilityIdentifier = "inputDescription"
         txt.translatesAutoresizingMaskIntoConstraints = false
         return txt
@@ -80,12 +80,14 @@ class AddTaskView: UIView {
     var startDatePicker: UIDatePicker = {
         let dp = UIDatePicker()
         dp.datePickerMode = .dateAndTime
+        dp.translatesAutoresizingMaskIntoConstraints = false
         return dp
     }()
     
     var finishDatePicker: UIDatePicker = {
         let dp = UIDatePicker()
         dp.datePickerMode = .dateAndTime
+        dp.translatesAutoresizingMaskIntoConstraints = false
         return dp
     }()
     
@@ -125,7 +127,7 @@ class AddTaskView: UIView {
         self.addSubview(addTaskButton)
         self.addSubview(startDatePicker)
         self.addSubview(finishDatePicker)
-        
+
         let margin = self.layoutMarginsGuide
         
         let constraints: [NSLayoutConstraint] = [
@@ -152,7 +154,6 @@ class AddTaskView: UIView {
             startDatePicker.topAnchor.constraint(equalTo: startLabel.bottomAnchor, constant: 10),
             startDatePicker.heightAnchor.constraint(equalTo: margin.heightAnchor, multiplier: 0.1),
             startDatePicker.leadingAnchor.constraint(equalTo: margin.leadingAnchor),
-            startDatePicker.trailingAnchor.constraint(equalTo: margin.trailingAnchor),
             
             finishLabel.topAnchor.constraint(equalTo: startDatePicker.bottomAnchor, constant: 10),
             finishLabel.leadingAnchor.constraint(equalTo: margin.leadingAnchor),
@@ -160,13 +161,11 @@ class AddTaskView: UIView {
             finishDatePicker.topAnchor.constraint(equalTo: finishLabel.bottomAnchor, constant: 10),
             finishDatePicker.heightAnchor.constraint(equalTo: margin.heightAnchor, multiplier: 0.1),
             finishDatePicker.leadingAnchor.constraint(equalTo: margin.leadingAnchor),
-            finishDatePicker.trailingAnchor.constraint(equalTo: margin.trailingAnchor),
             
-            addTaskButton.topAnchor.constraint(greaterThanOrEqualTo: finishDatePicker.bottomAnchor, constant: 10),
+            addTaskButton.topAnchor.constraint(greaterThanOrEqualTo: finishDatePicker.bottomAnchor, constant: 20),
             addTaskButton.leadingAnchor.constraint(equalTo: margin.leadingAnchor, constant: 50),
             addTaskButton.trailingAnchor.constraint(equalTo: margin.trailingAnchor, constant: -50),
-            addTaskButton.bottomAnchor.constraint(equalTo: margin.bottomAnchor)
-            
+            addTaskButton.bottomAnchor.constraint(lessThanOrEqualTo: margin.bottomAnchor)
         ]
         NSLayoutConstraint.activate(constraints)
     }
