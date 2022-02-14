@@ -2,8 +2,8 @@
 
 I made this project as a test task from SimbirSoft company, but also to practice using CalendarKit, fetching and decoding JSON data, applying day\night appearance.
 
-![Simbirsoft Dairy](https://github.com/NickSagan/Weather/blob/b64ac0306f9411f37a2573540e2cff722763a2ec/2.jpg?raw=true)
-![Simbirsoft Dairy](https://github.com/NickSagan/Weather/blob/b64ac0306f9411f37a2573540e2cff722763a2ec/3.jpg?raw=true)
+![Simbirsoft Dairy](https://github.com/NickSagan/Simbirsoft-Dairy/blob/459d4e4fe60e45604481fedd47342ab92a582884/0.jpeg?raw=true)
+![Simbirsoft Dairy](https://github.com/NickSagan/Simbirsoft-Dairy/blob/459d4e4fe60e45604481fedd47342ab92a582884/1.jpeg?raw=true)
 
 # This project contains
 
@@ -18,7 +18,7 @@ I made this project as a test task from SimbirSoft company, but also to practice
 * App will change its appearance depending on day\night cycle
 * Also you can share your tasks with your friends:
 
-![Simbirsoft Dairy](https://github.com/NickSagan/Weather/blob/b64ac0306f9411f37a2573540e2cff722763a2ec/1.jpg?raw=true)
+![Simbirsoft Dairy](https://github.com/NickSagan/Simbirsoft-Dairy/blob/459d4e4fe60e45604481fedd47342ab92a582884/2.jpeg?raw=true)
 
 # Message me
 [![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/64px-Telegram_logo.svg.png)](https://t.me/NickSagan)
