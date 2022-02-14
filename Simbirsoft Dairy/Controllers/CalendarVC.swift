@@ -24,7 +24,7 @@ class CalendarVC: DayViewController {
         event.id = 1
         event.dateInterval = DateInterval(start: Date(timeIntervalSince1970: 1644851038), end: Date(timeIntervalSince1970: 1644869312))
         event.text = "Дело 15"
-        event.description = "Very important task to do asap"
+        event.description = "Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asapVery important task to do asap"
         events.append(event)
         print("Add event: \(event)")
         reloadData()
@@ -49,6 +49,7 @@ class CalendarVC: DayViewController {
     private func presentDetailViewForEvent(_ event: EventModel) {
         let dvc = DetailVC()
         dvc.event = event
-        navigationController?.pushViewController(dvc, animated: true)
+        dvc.modalPresentationStyle = .pageSheet
+        navigationController?.present(dvc, animated: true, completion: nil)
     }
 }
