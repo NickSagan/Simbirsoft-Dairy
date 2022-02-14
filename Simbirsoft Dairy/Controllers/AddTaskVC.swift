@@ -59,6 +59,7 @@ class AddTaskVC: UIViewController {
     func addView() {
         addTaskView = AddTaskView()
         addTaskView.translatesAutoresizingMaskIntoConstraints = false
+        addTaskView.accessibilityIdentifier = "addTaskView"
         view.addSubview(addTaskView)
         
         NSLayoutConstraint.activate([

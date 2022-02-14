@@ -16,8 +16,9 @@ class CalendarVC: DayViewController {
         super.viewDidLoad()
         title = "Simbirsoft Dairy"
         view.backgroundColor = .systemBackground
-
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addEvent))
+        let button = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addEvent))
+        button.accessibilityIdentifier = "addButtonCalendarVC"
+        navigationItem.rightBarButtonItem = button
     }
     
     override func viewWillAppear(_ animated: Bool) {

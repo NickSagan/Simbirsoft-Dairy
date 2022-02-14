@@ -90,6 +90,7 @@ extension OnboardVC: SwiftyOnboardDataSource, SwiftyOnboardDelegate {
         //Setup targets for the buttons on the overlay view:
         overlay.skipButton.addTarget(self, action: #selector(handleSkip), for: .touchUpInside)
         overlay.continueButton.addTarget(self, action: #selector(handleContinue), for: .touchUpInside)
+        overlay.skipButton.accessibilityIdentifier = "skip"
         
         return overlay
     }

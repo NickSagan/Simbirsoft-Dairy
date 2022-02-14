@@ -19,6 +19,7 @@ class AddTaskView: UIView {
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.sizeToFit()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.accessibilityIdentifier = "nameLabel"
         return label
     }()
     
