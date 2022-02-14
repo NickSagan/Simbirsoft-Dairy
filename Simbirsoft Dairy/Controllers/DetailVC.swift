@@ -14,6 +14,7 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
         addDetailView()
         displayEvent()
     }
@@ -32,8 +33,8 @@ class DetailVC: UIViewController {
     
     func displayEvent() {
         detailView.name.text = event.text
-        detailView.start.text = event.dateInterval.start.dateString()
-        detailView.finish.text = event.dateInterval.end.dateString()
+        detailView.start.text = "Start: \(event.dateInterval.start.dateString())"
+        detailView.finish.text = "Finish: \(event.dateInterval.end.dateString())"
         detailView.descriptionText.text = event.description
     }
 }
