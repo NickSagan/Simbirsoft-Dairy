@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CB4A0CF92E11163BDBB5662 /* Pods_Simbirsoft_Dairy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C1A68FCA910643B6A90B7D /* Pods_Simbirsoft_Dairy.framework */; };
 		91393EFB27BA325500EB5804 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393EFA27BA325500EB5804 /* Adapter.swift */; };
 		91393EFD27BA373000EB5804 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91393EFC27BA373000EB5804 /* Extensions.swift */; };
 		91393F0127BA3B1D00EB5804 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91393F0027BA3B1D00EB5804 /* DetailView.xib */; };
@@ -28,6 +29,8 @@
 		9164E11B27B962AA007B3028 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E11A27B962AA007B3028 /* TaskModel.swift */; };
 		9164E12127B9693F007B3028 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E12027B9693F007B3028 /* DataManager.swift */; };
 		9164E12B27B9992E007B3028 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164E12A27B9992E007B3028 /* EventModel.swift */; };
+		9DD4EFBFCD84B54B5DB069C1 /* Pods_Simbirsoft_DairyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B4142F09129B991644DB4F /* Pods_Simbirsoft_DairyTests.framework */; };
+		D169338BA775985A2DEF2C70 /* Pods_Simbirsoft_Dairy_Simbirsoft_DairyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4751CD7F57052725F403A647 /* Pods_Simbirsoft_Dairy_Simbirsoft_DairyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015F6533EB45A3F5B444329E /* Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2759E6D5F0F116658BAC886A /* Pods-Simbirsoft Dairy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simbirsoft Dairy.release.xcconfig"; path = "Target Support Files/Pods-Simbirsoft Dairy/Pods-Simbirsoft Dairy.release.xcconfig"; sourceTree = "<group>"; };
+		38E0F939E648C437A4E8B370 /* Pods-Simbirsoft DairyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simbirsoft DairyTests.debug.xcconfig"; path = "Target Support Files/Pods-Simbirsoft DairyTests/Pods-Simbirsoft DairyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4751CD7F57052725F403A647 /* Pods_Simbirsoft_Dairy_Simbirsoft_DairyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simbirsoft_Dairy_Simbirsoft_DairyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB93BCF0A377F26D0F29877 /* Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.release.xcconfig"; path = "Target Support Files/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		91393EFA27BA325500EB5804 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		91393EFC27BA373000EB5804 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		91393F0027BA3B1D00EB5804 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
@@ -71,6 +79,10 @@
 		9164E11A27B962AA007B3028 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		9164E12027B9693F007B3028 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9164E12A27B9992E007B3028 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		A4D314C416D33C563BABE0E9 /* Pods-Simbirsoft DairyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simbirsoft DairyTests.release.xcconfig"; path = "Target Support Files/Pods-Simbirsoft DairyTests/Pods-Simbirsoft DairyTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6C1A68FCA910643B6A90B7D /* Pods_Simbirsoft_Dairy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simbirsoft_Dairy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF59FC1E80C168EEDC2C67EB /* Pods-Simbirsoft Dairy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simbirsoft Dairy.debug.xcconfig"; path = "Target Support Files/Pods-Simbirsoft Dairy/Pods-Simbirsoft Dairy.debug.xcconfig"; sourceTree = "<group>"; };
+		C5B4142F09129B991644DB4F /* Pods_Simbirsoft_DairyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simbirsoft_DairyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,7 @@
 			files = (
 				9164E11727B92E4E007B3028 /* CalendarKit in Frameworks */,
 				91393F1127BA57B000EB5804 /* IQKeyboardManagerSwift in Frameworks */,
+				5CB4A0CF92E11163BDBB5662 /* Pods_Simbirsoft_Dairy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DD4EFBFCD84B54B5DB069C1 /* Pods_Simbirsoft_DairyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D169338BA775985A2DEF2C70 /* Pods_Simbirsoft_Dairy_Simbirsoft_DairyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +148,8 @@
 				9164E0FB27B92DC8007B3028 /* Simbirsoft DairyTests */,
 				9164E10527B92DC8007B3028 /* Simbirsoft DairyUITests */,
 				9164E0E327B92DC3007B3028 /* Products */,
+				B3FBF936DAF1D25451566171 /* Pods */,
+				D8785268555E4E2EEA4F6F9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +226,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B3FBF936DAF1D25451566171 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF59FC1E80C168EEDC2C67EB /* Pods-Simbirsoft Dairy.debug.xcconfig */,
+				2759E6D5F0F116658BAC886A /* Pods-Simbirsoft Dairy.release.xcconfig */,
+				015F6533EB45A3F5B444329E /* Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.debug.xcconfig */,
+				8AB93BCF0A377F26D0F29877 /* Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.release.xcconfig */,
+				38E0F939E648C437A4E8B370 /* Pods-Simbirsoft DairyTests.debug.xcconfig */,
+				A4D314C416D33C563BABE0E9 /* Pods-Simbirsoft DairyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D8785268555E4E2EEA4F6F9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6C1A68FCA910643B6A90B7D /* Pods_Simbirsoft_Dairy.framework */,
+				4751CD7F57052725F403A647 /* Pods_Simbirsoft_Dairy_Simbirsoft_DairyUITests.framework */,
+				C5B4142F09129B991644DB4F /* Pods_Simbirsoft_DairyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9164E10C27B92DC8007B3028 /* Build configuration list for PBXNativeTarget "Simbirsoft Dairy" */;
 			buildPhases = (
+				D3F79698F4A9561746BDE1D8 /* [CP] Check Pods Manifest.lock */,
 				9164E0DE27B92DC3007B3028 /* Sources */,
 				9164E0DF27B92DC3007B3028 /* Frameworks */,
 				9164E0E027B92DC3007B3028 /* Resources */,
+				7AF5892A20F62AE5A7B5CC56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9164E10F27B92DC8007B3028 /* Build configuration list for PBXNativeTarget "Simbirsoft DairyTests" */;
 			buildPhases = (
+				B97748E2E17E1B44A31935E4 /* [CP] Check Pods Manifest.lock */,
 				9164E0F427B92DC8007B3028 /* Sources */,
 				9164E0F527B92DC8007B3028 /* Frameworks */,
 				9164E0F627B92DC8007B3028 /* Resources */,
@@ -255,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9164E11227B92DC8007B3028 /* Build configuration list for PBXNativeTarget "Simbirsoft DairyUITests" */;
 			buildPhases = (
+				A069E333CE73E8DC32A98757 /* [CP] Check Pods Manifest.lock */,
 				9164E0FE27B92DC8007B3028 /* Sources */,
 				9164E0FF27B92DC8007B3028 /* Frameworks */,
 				9164E10027B92DC8007B3028 /* Resources */,
+				35280F53C20A29CAFC4219BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,8 +348,8 @@
 			);
 			mainGroup = 9164E0D927B92DC3007B3028;
 			packageReferences = (
-				9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */,
-				91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit.git" */,
+				91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */,
 			);
 			productRefGroup = 9164E0E327B92DC3007B3028 /* Products */;
 			projectDirPath = "";
@@ -342,6 +388,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35280F53C20A29CAFC4219BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AF5892A20F62AE5A7B5CC56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simbirsoft Dairy/Pods-Simbirsoft Dairy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Simbirsoft Dairy/Pods-Simbirsoft Dairy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Simbirsoft Dairy/Pods-Simbirsoft Dairy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A069E333CE73E8DC32A98757 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simbirsoft Dairy-Simbirsoft DairyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B97748E2E17E1B44A31935E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simbirsoft DairyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3F79698F4A9561746BDE1D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simbirsoft Dairy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9164E0DE27B92DC3007B3028 /* Sources */ = {
@@ -526,6 +675,7 @@
 		};
 		9164E10D27B92DC8007B3028 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF59FC1E80C168EEDC2C67EB /* Pods-Simbirsoft Dairy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -556,6 +706,7 @@
 		};
 		9164E10E27B92DC8007B3028 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2759E6D5F0F116658BAC886A /* Pods-Simbirsoft Dairy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -586,6 +737,7 @@
 		};
 		9164E11027B92DC8007B3028 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E0F939E648C437A4E8B370 /* Pods-Simbirsoft DairyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -611,6 +763,7 @@
 		};
 		9164E11127B92DC8007B3028 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D314C416D33C563BABE0E9 /* Pods-Simbirsoft DairyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -636,6 +789,7 @@
 		};
 		9164E11327B92DC8007B3028 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015F6533EB45A3F5B444329E /* Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +813,7 @@
 		};
 		9164E11427B92DC8007B3028 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AB93BCF0A377F26D0F29877 /* Pods-Simbirsoft Dairy-Simbirsoft DairyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -722,7 +877,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+		91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
@@ -730,7 +885,7 @@
 				kind = branch;
 			};
 		};
-		9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+		9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
 			requirement = {
@@ -743,12 +898,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		91393F1027BA57B000EB5804 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			package = 91393F0F27BA57B000EB5804 /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */;
 			productName = IQKeyboardManagerSwift;
 		};
 		9164E11627B92E4E007B3028 /* CalendarKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			package = 9164E11527B92E4E007B3028 /* XCRemoteSwiftPackageReference "CalendarKit.git" */;
 			productName = CalendarKit;
 		};
 /* End XCSwiftPackageProductDependency section */
