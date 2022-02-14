@@ -1,5 +1,6 @@
 # Simbirsoft Dairy
 
+A beautiful diary in which you can add tasks and share them with friends.
 I made this project as a test task from SimbirSoft company, but also to practice using CalendarKit, fetching and decoding JSON data, applying day\night appearance.
 
 # This project contains
