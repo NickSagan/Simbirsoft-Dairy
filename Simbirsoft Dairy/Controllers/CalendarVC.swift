@@ -20,14 +20,18 @@ class CalendarVC: DayViewController {
     }
     
     @objc func addEvent() {
-        let event = EventModel()
-        event.id = 1
-        event.dateInterval = DateInterval(start: Date(timeIntervalSince1970: 1644851038), end: Date(timeIntervalSince1970: 1644869312))
-        event.text = "Дело 15"
-        event.description = "Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asapVery important task to do asap"
-        events.append(event)
-        print("Add event: \(event)")
-        reloadData()
+        let atvc = AddTaskVC()
+        atvc.modalPresentationStyle = .pageSheet
+        navigationController?.present(atvc, animated: true, completion: nil)
+        
+//        let event = EventModel()
+//        event.id = 1
+//        event.dateInterval = DateInterval(start: Date(timeIntervalSince1970: 1644851038), end: Date(timeIntervalSince1970: 1644869312))
+//        event.text = "Дело 15"
+//        event.description = "Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asap Very important task to do asapVery important task to do asap"
+//        events.append(event)
+//        print("Add event: \(event)")
+//        reloadData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
