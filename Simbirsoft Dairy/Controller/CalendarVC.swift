@@ -20,7 +20,14 @@ class CalendarVC: DayViewController {
     }
     
     @objc func addEvent() {
-        
+        let event = EventModel()
+        event.id = 1
+        event.dateInterval = DateInterval(start: Date(timeIntervalSince1970: 1644851038), end: Date(timeIntervalSince1970: 1644869312))
+        event.text = "Дело 15"
+        event.description = "Very important task to do asap"
+        events.append(event)
+        print("Add event: \(event)")
+        reloadData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -34,16 +41,14 @@ class CalendarVC: DayViewController {
 
     // Обрабатываем нажатие на дело
     override func dayViewDidSelectEventView(_ eventView: EventView) {
-        print("tap: \(String(describing: eventView.descriptor?.text) )")
         guard let eventModel = eventView.descriptor as? EventModel else { return }
-        print(eventModel.description)
-
+        presentDetailViewForEvent(eventModel)
     }
 
     // Открываем экран подробного описания дела
     private func presentDetailViewForEvent(_ event: EventModel) {
-//        let dvc = DetailVC()
-//        dvc.event = event
-//        navigationController?.pushViewController(dvc, animated: true)
+        let dvc = DetailVC()
+        dvc.event = event
+        navigationController?.pushViewController(dvc, animated: true)
     }
 }
