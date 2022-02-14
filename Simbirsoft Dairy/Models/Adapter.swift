@@ -14,7 +14,7 @@ struct Adapter {
     func getTasks(from events: [EventModel]) -> [TaskModel] {
         var tasksArr = [TaskModel]()
         for event in events {
-            let task = TaskModel(id: event.id!, date_start: event.dateInterval.start.timeIntervalSince1970, date_finish: event.dateInterval.end.timeIntervalSince1970, name: event.text, description: event.description)
+            let task = TaskModel(id: event.id, date_start: event.dateInterval.start.timeIntervalSince1970, date_finish: event.dateInterval.end.timeIntervalSince1970, name: event.text, description: event.description)
             tasksArr.append(task)
         }
         return tasksArr

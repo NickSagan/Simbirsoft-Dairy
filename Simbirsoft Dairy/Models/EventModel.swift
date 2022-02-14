@@ -14,7 +14,7 @@ final class EventModel: EventDescriptor {
     public var isAllDay = false
     public var text = ""
     public var description = ""
-    public var id: Int?
+    public var id: Int = 0
     public var attributedText: NSAttributedString?
     public var lineBreakMode: NSLineBreakMode?
     public var color = SystemColors.systemBlue {

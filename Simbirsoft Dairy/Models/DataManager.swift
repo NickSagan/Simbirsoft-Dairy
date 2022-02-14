@@ -10,7 +10,7 @@ import Foundation
 class DataManager {
 
     static let shared = DataManager()
-    private let adapter = Adapter()
+    private let adapter = Adapter() // [TaskModel] <=> [EventModel]
     
     private init() { }
     
